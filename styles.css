@@ -1,12 +1,48 @@
+/* Colors: https://coolors.co/393d3f-494b4c-595959-7f7f7f-a5a5a5-cccccc-f2f2f2 */
+
 /* G E N E R A L */
 
 * {
     box-sizing: border-box;
+    color: #F2F2F2;
+    background-color: #393D3F;
     
     
 }
 
 body {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+
+    padding: 0px;
+    margin: 0px;
+
+}
+
+p {
+
+}
+
+/* S P E C I F I C S */
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    /* border: 5px solid pink; */
+    
+}
+
+    .logo {
+        font-size: 30px;
+
+    }
+
+.main-body {
     display: flex;
     display: flex;
     justify-content: space-between;
@@ -16,15 +52,35 @@ body {
 
 }
 
-h1 {
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding: 10px; 
+}
+
+.credit {
+    font-size: 20px;
+    padding: 5px;
 
 }
 
-p {
+.dimden-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-/* S P E C I F I C S */
+.signature {
+    font-size: 15px;
+    
+
+}
 
 .side-left {
     width: 300px;
@@ -36,7 +92,7 @@ p {
 }
 
     .left-empty {
-        height: 600px;
+        height: 750px;
 
     }
 
@@ -55,6 +111,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 5px;
     
 
     /* border: 5px solid blue; */
@@ -62,15 +119,7 @@ p {
 
 }
 
-    header {
-
-        /* border: 5px solid pink; */
-        
-    }
-
-        .logo {
-
-        }
+    
 
     .main {
         flex: 1;
@@ -82,8 +131,9 @@ p {
     }
 
         .welcome {
-            padding: 10px;
-            border: 5px solid black;
+            padding: 15px;
+            border: 3px solid #7F7F7F;
+            border-radius: 10px;
 
         }
 
@@ -151,25 +201,77 @@ p {
 
 
         .scrolling-bar {
+            overflow: hidden;
+            text-wrap: nowrap;
+            padding: 10px;
+            
+            margin-top: 15px;
+            margin-bottom: 15px;
 
-
-            /* border: 5px solid salmon; */
+        }
+          
+          .scrolling-text {
+            /* animation properties */
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            
+            -moz-animation: my-animation 15s linear infinite;
+            -webkit-animation: my-animation 15s linear infinite;
+            animation: my-animation 15s linear infinite;
+          }
+          
+          /* for Firefox */
+          @-moz-keyframes my-animation {
+            from { -moz-transform: translateX(100%); }
+            to { -moz-transform: translateX(-100%); }
+          }
+          
+          /* for Chrome */
+          @-webkit-keyframes my-animation {
+            from { -webkit-transform: translateX(100%); }
+            to { -webkit-transform: translateX(-100%); }
+          }
+          
+          @keyframes my-animation {
+            from {
+              -moz-transform: translateX(100%);
+              -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+            }
+            to {
+              -moz-transform: translateX(-100%);
+              -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+            }
 
         }
 
         .blog {
+            padding: 15px;
+            border: 3px solid #7F7F7F;
+            border-radius: 10px;
 
-            border: 5px solid black;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            
 
         }
 
         .billboard {
+            width: 100%;
+            height: 100px;
+
+            border: 2px solid rgb(39, 38, 38);
 
         }
 
         .projects {
-
-            border: 5px solid black;
+            border: 3px solid #7F7F7F;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+            margin-bottom: 15px;
 
         }
 
@@ -180,9 +282,10 @@ p {
         .system-status {
             display: flex;
             justify-content: left;
-           
+            padding: 15px;
 
-            border: 5px solid red;
+            border: 3px solid #7F7F7F;
+            border-radius: 10px;
             
 
         }
@@ -211,31 +314,7 @@ p {
 
             }
 
-    footer {
-        border: 5px solid black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         
-    }
-
-        .credit {
-            font-size: 20px;
-
-        }
-
-        .dimden-button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        .signature {
-            font-size: 15px;
-
-        }
 
     .side-right {
         width: 300px;
