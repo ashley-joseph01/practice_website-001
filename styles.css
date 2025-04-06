@@ -203,10 +203,10 @@ footer {
         .scrolling-bar {
             overflow: hidden;
             text-wrap: nowrap;
-            padding: 10px;
+            padding: 0px;
             
-            margin-top: 15px;
-            margin-bottom: 15px;
+            margin-top: 12px;
+            margin-bottom: 10px;
 
         }
           
