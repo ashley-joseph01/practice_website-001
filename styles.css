@@ -45,7 +45,7 @@ header {
 .main-body {
     display: flex;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0px;
 
     
@@ -106,7 +106,7 @@ footer {
     }
 
 .center {
-    flex: 2 2 0;
+    /* flex: 2 2 0; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
